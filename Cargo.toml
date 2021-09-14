@@ -13,3 +13,6 @@ exclude = ["ccv/site/*"]
 
 [dependencies]
 libc = "0.2"
+
+[build-dependencies]
+pkg-config = "0.3"
