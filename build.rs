@@ -1,1 +1,1 @@
-extern crate p
+extern crate pkg_c
