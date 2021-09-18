@@ -1,1 +1,1 @@
-extern crate pkg_c
+extern crate pkg_config;
