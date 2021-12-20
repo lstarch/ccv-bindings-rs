@@ -5,4 +5,6 @@ use std::env;
 use std::path::Path;
 
 use std::fs::File;
-use std::io::Writ
+use std::io::Write;
+
+f
