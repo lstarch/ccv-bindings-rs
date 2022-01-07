@@ -7,4 +7,5 @@ use std::path::Path;
 use std::fs::File;
 use std::io::Write;
 
-fn main(
+fn main() {
+ 
