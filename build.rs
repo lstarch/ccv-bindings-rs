@@ -8,4 +8,4 @@ use std::fs::File;
 use std::io::Write;
 
 fn main() {
-    let cur_dir = env::var("CARGO_MANIFES
+    let cur_dir = env::var("CARGO_MANIFEST_DIR"
