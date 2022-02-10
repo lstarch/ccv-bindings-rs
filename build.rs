@@ -9,3 +9,5 @@ use std::io::Write;
 
 fn main() {
     let cur_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
+
+    l
