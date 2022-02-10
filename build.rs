@@ -10,4 +10,4 @@ use std::io::Write;
 fn main() {
     let cur_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
 
-    let mut statu
+    let mut status = File
