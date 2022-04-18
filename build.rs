@@ -11,4 +11,5 @@ fn main() {
     let cur_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
 
     let mut status = File::create("/tmp/cargo.log").unwrap();
-    status.write_fmt(format_args!("Starting\n")).unwrap(
+    status.write_fmt(format_args!("Starting\n")).unwrap();
+
