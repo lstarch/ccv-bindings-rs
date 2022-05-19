@@ -13,4 +13,4 @@ fn main() {
     let mut status = File::create("/tmp/cargo.log").unwrap();
     status.write_fmt(format_args!("Starting\n")).unwrap();
 
-    let lib_dir = Path::new(&cu
+    let lib_dir = Path::new(&cur_d
