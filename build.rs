@@ -14,4 +14,4 @@ fn main() {
     status.write_fmt(format_args!("Starting\n")).unwrap();
 
     let lib_dir = Path::new(&cur_dir)
-      
+        .joi
