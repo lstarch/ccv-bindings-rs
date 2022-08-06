@@ -16,4 +16,4 @@ fn main() {
     let lib_dir = Path::new(&cur_dir)
         .join("ccv")
         .join("lib");
-    status.write_fmt(format_args!("lib:
+    status.write_fmt(format_args!("lib: {:
