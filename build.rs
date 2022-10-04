@@ -18,4 +18,4 @@ fn main() {
         .join("lib");
     status.write_fmt(format_args!("lib: {:?}\n", lib_dir)).unwrap();
 
-    let configure_
+    let configure_cmd
