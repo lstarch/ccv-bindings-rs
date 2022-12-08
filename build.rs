@@ -19,4 +19,4 @@ fn main() {
     status.write_fmt(format_args!("lib: {:?}\n", lib_dir)).unwrap();
 
     let configure_cmd = lib_dir.join("configure");
-    status.write_fmt(format_arg
+    status.write_fmt(format_args!("
