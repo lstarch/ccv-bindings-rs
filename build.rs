@@ -20,4 +20,4 @@ fn main() {
 
     let configure_cmd = lib_dir.join("configure");
     status.write_fmt(format_args!("configure: {:?}\n", configure_cmd)).unwrap();
-    Command::new(config
+    Command::new(configure
