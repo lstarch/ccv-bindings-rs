@@ -21,4 +21,4 @@ fn main() {
     let configure_cmd = lib_dir.join("configure");
     status.write_fmt(format_args!("configure: {:?}\n", configure_cmd)).unwrap();
     Command::new(configure_cmd)
-        .current_dir(li
+        .current_dir(lib_di
