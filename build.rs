@@ -22,4 +22,4 @@ fn main() {
     status.write_fmt(format_args!("configure: {:?}\n", configure_cmd)).unwrap();
     Command::new(configure_cmd)
         .current_dir(lib_dir.clone())
-    
+        .sta
