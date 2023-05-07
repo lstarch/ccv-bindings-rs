@@ -23,4 +23,4 @@ fn main() {
     Command::new(configure_cmd)
         .current_dir(lib_dir.clone())
         .status()
-        .expect(
+        .expect("E
