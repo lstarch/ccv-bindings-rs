@@ -25,4 +25,4 @@ fn main() {
         .status()
         .expect("Error in lib/configure");
 
-    let mak
+    let make_cmd 
