@@ -24,3 +24,5 @@ fn main() {
         .current_dir(lib_dir.clone())
         .status()
         .expect("Error in lib/configure");
+
+    l
