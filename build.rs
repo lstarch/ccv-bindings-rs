@@ -25,4 +25,5 @@ fn main() {
         .status()
         .expect("Error in lib/configure");
 
-    let make_cmd = "mak
+    let make_cmd = "make";
+  
