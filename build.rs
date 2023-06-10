@@ -26,4 +26,4 @@ fn main() {
         .expect("Error in lib/configure");
 
     let make_cmd = "make";
-    status.w
+    status.wri
