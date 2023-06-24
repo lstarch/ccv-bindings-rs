@@ -26,4 +26,6 @@ fn main() {
         .expect("Error in lib/configure");
 
     let make_cmd = "make";
-    status.write_fmt(format_args!("make: {:?}\n", make_cmd)).unwrap()
+    status.write_fmt(format_args!("make: {:?}\n", make_cmd)).unwrap();
+
+ 
