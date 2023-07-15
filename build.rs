@@ -29,4 +29,4 @@ fn main() {
     status.write_fmt(format_args!("make: {:?}\n", make_cmd)).unwrap();
 
     Command::new(make_cmd)
-        .args(&["-C", lib_dir.to_str().unwra
+        .args(&["-C", lib_dir.to_str().unwrap(
