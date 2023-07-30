@@ -31,4 +31,4 @@ fn main() {
     Command::new(make_cmd)
         .args(&["-C", lib_dir.to_str().unwrap()])
         .current_dir(lib_dir.clone())
-   
+        .
