@@ -32,4 +32,6 @@ fn main() {
         .args(&["-C", lib_dir.to_str().unwrap()])
         .current_dir(lib_dir.clone())
         .status()
-        .expect("Error in make"
+        .expect("Error in make");
+
+    
