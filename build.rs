@@ -34,4 +34,4 @@ fn main() {
         .status()
         .expect("Error in make");
 
-    println!("cargo:rustc-
+    println!("cargo:rustc-link-s
