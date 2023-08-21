@@ -34,4 +34,4 @@ fn main() {
         .status()
         .expect("Error in make");
 
-    println!("cargo:rustc-link-searc
+    println!("cargo:rustc-link-search=nati
