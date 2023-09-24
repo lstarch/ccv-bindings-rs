@@ -35,4 +35,4 @@ fn main() {
         .expect("Error in make");
 
     println!("cargo:rustc-link-search=native={}", lib_dir.to_str().unwrap());
-    println!("cargo:rustc-link-lib=stat
+    println!("cargo:rustc-link-lib=static=c
