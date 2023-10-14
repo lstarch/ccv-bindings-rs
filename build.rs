@@ -36,4 +36,4 @@ fn main() {
 
     println!("cargo:rustc-link-search=native={}", lib_dir.to_str().unwrap());
     println!("cargo:rustc-link-lib=static=ccv");
-    println!("cargo:ru
+    println!("cargo:rustc
