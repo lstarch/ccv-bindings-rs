@@ -38,4 +38,4 @@ fn main() {
     println!("cargo:rustc-link-lib=static=ccv");
     println!("cargo:rustc-link-lib=ccv");
 
-    // Now handle l
+    // Now handle libpng
