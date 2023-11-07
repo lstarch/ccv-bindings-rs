@@ -39,4 +39,4 @@ fn main() {
     println!("cargo:rustc-link-lib=ccv");
 
     // Now handle libpng
-    let lib = pkg_confi
+    let lib = pkg_config::
