@@ -39,4 +39,4 @@ fn main() {
     println!("cargo:rustc-link-lib=ccv");
 
     // Now handle libpng
-    let lib = pkg_config::Config::new().statik(false).atleast_version("1.6").probe("libpng").expect("Could
+    let lib = pkg_config::Config::new().statik(false).atleast_version("1.6").probe("libpng").expect("Could n
