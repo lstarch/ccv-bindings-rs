@@ -42,4 +42,5 @@ fn main() {
     let lib = pkg_config::Config::new().statik(false).atleast_version("1.6").probe("libpng").expect("Could not find libpng");
 
     // Link path
-    for path in &lib.link_pat
+    for path in &lib.link_paths {
+  
