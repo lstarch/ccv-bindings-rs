@@ -43,4 +43,4 @@ fn main() {
 
     // Link path
     for path in &lib.link_paths {
-        println!("cargo:rustc-link-search={}", p
+        println!("cargo:rustc-link-search={}", path.t
