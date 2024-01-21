@@ -43,4 +43,5 @@ fn main() {
 
     // Link path
     for path in &lib.link_paths {
-        println!("cargo:rustc-link-search={}", path.to_str().expect("Could not convert path to str"
+        println!("cargo:rustc-link-search={}", path.to_str().expect("Could not convert path to str"));
+   
