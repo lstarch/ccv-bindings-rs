@@ -46,4 +46,4 @@ fn main() {
         println!("cargo:rustc-link-search={}", path.to_str().expect("Could not convert path to str"));
     }
 
-    for lib 
+    for lib in &li
