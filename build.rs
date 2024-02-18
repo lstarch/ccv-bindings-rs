@@ -47,4 +47,4 @@ fn main() {
     }
 
     for lib in &lib.libs {
-        println!(
+        println!("cargo
