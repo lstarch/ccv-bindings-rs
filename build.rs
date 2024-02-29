@@ -47,4 +47,4 @@ fn main() {
     }
 
     for lib in &lib.libs {
-        println!("cargo:rustc-link-lib={}", l
+        println!("cargo:rustc-link-lib={}", lib)
