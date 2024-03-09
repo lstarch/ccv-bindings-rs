@@ -18,3 +18,8 @@ fn main() {
     let start = Instant::now();
     let words = pix.detect_words(Default::default());
     let duration = Instant::now() - start;
+
+    for word in &words {
+        println!("{} {} {} {}", word.x, word.y, word.width, word.height);
+    }
+    println!("total : {} in time {}ms\n", words.len(), duration.as_secs() * 1000 + (duration.subsec_nanos() as u64) / 1000000);
