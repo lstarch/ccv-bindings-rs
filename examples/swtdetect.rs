@@ -23,3 +23,4 @@ fn main() {
         println!("{} {} {} {}", word.x, word.y, word.width, word.height);
     }
     println!("total : {} in time {}ms\n", words.len(), duration.as_secs() * 1000 + (duration.subsec_nanos() as u64) / 1000000);
+}
