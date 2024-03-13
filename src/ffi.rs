@@ -10,3 +10,6 @@ pub struct DenseMatrix {
 
 #[repr(C)]
 pub enum FileType {
+    AnyFile = 0x020,
+    Gray = 0x100,
+    Color = 0x300
