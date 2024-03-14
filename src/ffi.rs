@@ -13,3 +13,8 @@ pub enum FileType {
     AnyFile = 0x020,
     Gray = 0x100,
     Color = 0x300
+}
+
+#[repr(C)]
+pub enum FileFormat {
+    BMP = 0x021,
