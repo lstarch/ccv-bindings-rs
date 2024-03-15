@@ -18,3 +18,10 @@ pub enum FileType {
 #[repr(C)]
 pub enum FileFormat {
     BMP = 0x021,
+    JPEG = 0x022,
+    PNG = 0x023,
+}
+
+#[repr(C)]
+pub enum Depth {
+    U8 = 0x01000,
