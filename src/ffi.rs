@@ -25,3 +25,7 @@ pub enum FileFormat {
 #[repr(C)]
 pub enum Depth {
     U8 = 0x01000,
+    S32 = 0x02000,
+    F32 = 0x04000,
+    S64 = 0x08000,
+    F64 = 0x10000,
