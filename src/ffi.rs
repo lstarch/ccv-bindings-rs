@@ -30,3 +30,11 @@ pub enum Depth {
     S64 = 0x08000,
     F64 = 0x10000,
 }
+
+#[repr(C)]
+pub enum Coordinate {
+    C1 = 0x001,
+    C2 = 0x002,
+    C3 = 0x003,
+    C4 = 0x004,
+}
