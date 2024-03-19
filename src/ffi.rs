@@ -38,3 +38,7 @@ pub enum Coordinate {
     C3 = 0x003,
     C4 = 0x004,
 }
+
+#[repr(C)]
+pub struct SwtParams {
+    pub interval: c_int,
