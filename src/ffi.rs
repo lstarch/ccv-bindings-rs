@@ -42,3 +42,7 @@ pub enum Coordinate {
 #[repr(C)]
 pub struct SwtParams {
     pub interval: c_int,
+    pub min_neighbors: c_int,
+    pub scale_invariant: c_int,
+    pub direction: c_int,
+    pub same_word_thresh: [c_double; 2],
