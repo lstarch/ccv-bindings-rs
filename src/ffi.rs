@@ -46,3 +46,7 @@ pub struct SwtParams {
     pub scale_invariant: c_int,
     pub direction: c_int,
     pub same_word_thresh: [c_double; 2],
+
+    pub size: c_int,
+    pub low_thresh: c_int,
+    pub high_thresh: c_int,
