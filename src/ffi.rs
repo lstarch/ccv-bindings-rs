@@ -50,3 +50,7 @@ pub struct SwtParams {
     pub size: c_int,
     pub low_thresh: c_int,
     pub high_thresh: c_int,
+    pub max_height: c_int,
+    pub min_height: c_int,
+    pub min_area: c_int,
+    pub letter_occlude_thresh: c_int,
