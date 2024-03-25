@@ -54,3 +54,8 @@ pub struct SwtParams {
     pub min_height: c_int,
     pub min_area: c_int,
     pub letter_occlude_thresh: c_int,
+    pub aspect_ratio: c_double,
+    pub std_ratio: c_double,
+    pub thickness_ratio: c_double,
+    pub height_ratio: c_double,
+    pub intensity_thresh: c_int,
