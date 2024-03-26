@@ -63,3 +63,7 @@ pub struct SwtParams {
     pub intersect_ratio: c_double,
     pub elongate_ratio: c_double,
     pub letter_thresh: c_int,
+    pub breakdown: c_int,
+    pub breakdown_ratio: c_double,
+}
+
