@@ -59,3 +59,7 @@ pub struct SwtParams {
     pub thickness_ratio: c_double,
     pub height_ratio: c_double,
     pub intensity_thresh: c_int,
+    pub distance_ratio: c_double,
+    pub intersect_ratio: c_double,
+    pub elongate_ratio: c_double,
+    pub letter_thresh: c_int,
