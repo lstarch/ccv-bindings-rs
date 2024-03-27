@@ -67,3 +67,12 @@ pub struct SwtParams {
     pub breakdown_ratio: c_double,
 }
 
+
+#[repr(C)]
+#[derive(Clone)]
+pub struct Array {
+    pub type_: c_int,
+    pub sig: u64,
+    pub refcount: c_int,
+    pub rnum: c_int,
+    pub size: c_int,
