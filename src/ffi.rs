@@ -76,3 +76,6 @@ pub struct Array {
     pub refcount: c_int,
     pub rnum: c_int,
     pub size: c_int,
+    pub rsize: c_int,
+    pub data: *mut c_void,
+}
