@@ -79,3 +79,7 @@ pub struct Array {
     pub rsize: c_int,
     pub data: *mut c_void,
 }
+
+#[repr(C)]
+#[derive(Clone)]
+pub struct Classification {
