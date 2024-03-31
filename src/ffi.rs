@@ -83,3 +83,8 @@ pub struct Array {
 #[repr(C)]
 #[derive(Clone)]
 pub struct Classification {
+    pub id: c_int,
+    pub confidence: c_float,
+}
+
+#[repr(C)]
