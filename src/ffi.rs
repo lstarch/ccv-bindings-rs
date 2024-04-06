@@ -88,3 +88,4 @@ pub struct Classification {
 }
 
 #[repr(C)]
+#[derive(Clone)]
