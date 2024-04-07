@@ -89,3 +89,6 @@ pub struct Classification {
 
 #[repr(C)]
 #[derive(Clone)]
+pub struct Rect {
+    pub x: c_int,
+    pub y: c_int,
