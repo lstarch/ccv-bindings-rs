@@ -92,3 +92,11 @@ pub struct Classification {
 pub struct Rect {
     pub x: c_int,
     pub y: c_int,
+    pub width: c_int,
+    pub height: c_int
+}
+
+extern {
+    pub fn ccv_read_impl(path: *const c_char, out: *mut *mut DenseMatrix, type_: c_int, rows: c_int, cols: c_int, scanline: c_int) -> c_int;
+
+    pub fn ccv_write(mat: *mut DenseMatrix, path: *const c_char, len: *mut c_int, format: FileFormat, conf: *mut c_void) -> c_int;
