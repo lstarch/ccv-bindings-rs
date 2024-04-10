@@ -105,3 +105,5 @@ extern {
     pub fn ccv_array_free(array: *mut Array);
 
     pub fn ccv_swt(mat: *mut DenseMatrix, out: *mut *mut DenseMatrix, type_: c_int, params: SwtParams);
+    pub fn ccv_swt_detect_words(mat: *mut DenseMatrix, params: SwtParams) -> *mut Array;
+}
