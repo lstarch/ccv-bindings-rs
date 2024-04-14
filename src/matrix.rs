@@ -8,3 +8,8 @@ use libc::*;
 use ffi;
 
 pub struct Matrix(*mut ffi::DenseMatrix);
+
+pub use ffi::FileFormat;
+
+pub enum OpenAs {
+    Any,
