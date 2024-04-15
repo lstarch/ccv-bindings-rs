@@ -15,3 +15,9 @@ pub enum OpenAs {
     Any,
     ToGray,
     ToColor
+}
+
+// Don't expose this to the public.
+pub trait TPrivate {
+    fn from_c(ptr: *mut ffi::DenseMatrix) -> Matrix;
+    fn as_c(&mut self) -> *mut ffi::DenseMatrix;
