@@ -13,3 +13,5 @@ pub use ffi::FileFormat;
 
 pub enum OpenAs {
     Any,
+    ToGray,
+    ToColor
