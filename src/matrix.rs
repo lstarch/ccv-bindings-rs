@@ -21,3 +21,8 @@ pub enum OpenAs {
 pub trait TPrivate {
     fn from_c(ptr: *mut ffi::DenseMatrix) -> Matrix;
     fn as_c(&mut self) -> *mut ffi::DenseMatrix;
+}
+
+impl TPrivate for Matrix {
+    fn from_c(ptr: *mut ffi::DenseMatrix) -> Matrix {
+       assert!(!ptr.is_null());
