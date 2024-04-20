@@ -26,3 +26,6 @@ pub trait TPrivate {
 impl TPrivate for Matrix {
     fn from_c(ptr: *mut ffi::DenseMatrix) -> Matrix {
        assert!(!ptr.is_null());
+       Matrix(ptr)
+   }
+   fn as_c(&mut self) -> *mut ffi::DenseMatrix {
