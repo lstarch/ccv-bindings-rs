@@ -29,3 +29,8 @@ impl TPrivate for Matrix {
        Matrix(ptr)
    }
    fn as_c(&mut self) -> *mut ffi::DenseMatrix {
+       self.0
+   }
+}
+
+impl Drop for Matrix {
