@@ -43,3 +43,5 @@ impl Drop for Matrix {
 
 impl Matrix {
     pub fn read<P: AsRef<Path>>(path: P, params: OpenAs) -> Option<Matrix> {
+        let path : &str = path.as_ref().to_str().unwrap(); // FIXME: Better error reporting.
+        let c_path = CString::new(path).unwrap().as_ptr(); // FIXME: Better error reporting.
