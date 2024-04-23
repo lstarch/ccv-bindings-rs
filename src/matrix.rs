@@ -34,3 +34,12 @@ impl TPrivate for Matrix {
 }
 
 impl Drop for Matrix {
+    fn drop(&mut self) {
+        unsafe {
+            ffi::ccv_matrix_free(self.0);
+        }
+    }
+}
+
+impl Matrix {
+    pub fn read<P: AsRef<Path>>(path: P, params: OpenAs) -> Option<Matrix> {
