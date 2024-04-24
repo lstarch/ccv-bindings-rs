@@ -45,3 +45,6 @@ impl Matrix {
     pub fn read<P: AsRef<Path>>(path: P, params: OpenAs) -> Option<Matrix> {
         let path : &str = path.as_ref().to_str().unwrap(); // FIXME: Better error reporting.
         let c_path = CString::new(path).unwrap().as_ptr(); // FIXME: Better error reporting.
+        let mut matrix = null_mut();
+        let params = match params {
+            OpenAs::Any => ffi::FileType::AnyFile as c_int,
