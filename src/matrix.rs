@@ -48,3 +48,7 @@ impl Matrix {
         let mut matrix = null_mut();
         let params = match params {
             OpenAs::Any => ffi::FileType::AnyFile as c_int,
+            OpenAs::ToGray => ffi::FileType::AnyFile as c_int | ffi::FileType::Gray as c_int,
+            OpenAs::ToColor => ffi::FileType::AnyFile as c_int | ffi::FileType::Color as c_int,
+        };
+        if unsafe { ffi::ccv_read_impl(c_path, &mut matrix, params, 0, 0, 0) } == 0 {
