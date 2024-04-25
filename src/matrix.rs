@@ -52,3 +52,7 @@ impl Matrix {
             OpenAs::ToColor => ffi::FileType::AnyFile as c_int | ffi::FileType::Color as c_int,
         };
         if unsafe { ffi::ccv_read_impl(c_path, &mut matrix, params, 0, 0, 0) } == 0 {
+            Some(Matrix(matrix))
+        } else {
+            None
+        }
