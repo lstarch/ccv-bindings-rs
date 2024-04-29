@@ -56,3 +56,7 @@ impl Matrix {
         } else {
             None
         }
+    }
+    pub fn write<P: AsRef<Path>>(&self, path: P, format: FileFormat) -> Option<u64> {
+        let path : &str = path.as_ref().to_str().unwrap(); // FIXME: Better error reporting.
+        let c_path = CString::new(path).unwrap().as_ptr(); // FIXME: Better error reporting.
