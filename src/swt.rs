@@ -10,3 +10,5 @@ use std::ptr::null_mut;
 impl Default for SwtParams {
     fn default() -> Self {
         SwtParams {
+            direction: 1,
+            interval: 1,
