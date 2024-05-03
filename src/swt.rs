@@ -12,3 +12,6 @@ impl Default for SwtParams {
         SwtParams {
             direction: 1,
             interval: 1,
+            same_word_thresh: [ 0.1, 0.8 ],
+            min_neighbors: 1,
+            scale_invariant: 0,
