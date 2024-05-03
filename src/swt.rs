@@ -15,3 +15,7 @@ impl Default for SwtParams {
             same_word_thresh: [ 0.1, 0.8 ],
             min_neighbors: 1,
             scale_invariant: 0,
+            size: 3,
+            low_thresh: 124,
+            high_thresh: 204,
+            max_height: 300,
