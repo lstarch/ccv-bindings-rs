@@ -28,3 +28,10 @@ impl Default for SwtParams {
             height_ratio: 1.7,
             intensity_thresh: 31,
             distance_ratio: 2.9,
+            intersect_ratio: 1.3,
+            letter_thresh: 3,
+            elongate_ratio: 1.9,
+            breakdown: 1,
+            breakdown_ratio: 1.0,
+        }
+    }
