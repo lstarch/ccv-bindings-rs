@@ -35,3 +35,9 @@ impl Default for SwtParams {
             breakdown_ratio: 1.0,
         }
     }
+}
+
+pub trait TSwt {
+    fn swt(&mut self, params: SwtParams) -> Matrix;
+    fn detect_words(&mut self, params: SwtParams) -> Vec<Rect>;
+}
