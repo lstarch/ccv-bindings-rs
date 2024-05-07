@@ -49,3 +49,6 @@ impl TSwt for Matrix {
         Matrix::from_c(result)
     }
     fn detect_words(&mut self, params: SwtParams) -> Vec<Rect> { // FIXME Should this rather be an iterator?
+        let array = unsafe { ffi::ccv_swt_detect_words(self.as_c(), params) };
+        let start = unsafe { (*array).data as *const Rect };
+        let num = unsafe { (*array).rnum };
