@@ -56,3 +56,7 @@ impl TSwt for Matrix {
         let mut vec = Vec::new();
         for i in 0..num {
             unsafe {
+                let comp = start.clone().offset(i as isize);
+                vec.push((*comp).clone())
+            }
+        }
