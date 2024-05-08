@@ -52,3 +52,7 @@ impl TSwt for Matrix {
         let array = unsafe { ffi::ccv_swt_detect_words(self.as_c(), params) };
         let start = unsafe { (*array).data as *const Rect };
         let num = unsafe { (*array).rnum };
+
+        let mut vec = Vec::new();
+        for i in 0..num {
+            unsafe {
