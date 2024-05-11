@@ -60,3 +60,7 @@ impl TSwt for Matrix {
                 vec.push((*comp).clone())
             }
         }
+
+        unsafe { ffi::ccv_array_free(array) }
+        vec
+    }
