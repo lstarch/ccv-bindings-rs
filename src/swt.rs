@@ -64,3 +64,4 @@ impl TSwt for Matrix {
         unsafe { ffi::ccv_array_free(array) }
         vec
     }
+}
